@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>WealthScore Cal</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">wealthi</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="form">
+        <div class="title-question">
+            Ready to review your details?
+            <div class="comment">
+                All done, simply sign up in order to view your WealthScore.
+            </div>
+            <form method="post" name="Form" onclick="return validateForm()" action="">
+                <input class="input" id="firstName" name="firstName" placeholder="First Name" required pattern="\S+.*"></input><br>
+                <input class="input" id="email" name="email" placeholder="Email" required></input><br>
+                <input class="input" id="phone" name="phone" placeholder="Phone"></input><br>
+                <input class="input" id="password" name="password" placeholder="Password" required></input>
+                <div class="form-button" onclick="location.href='index.html'">
+                    Get Results
+                </div>
+            </form>
+        </div>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-bottom">
+
+  </div>
+</body>
+<script type="text/javascript">
+    function validateForm() {
+      var firstName = document.forms["Form"]["firstName"].value;
+      var email = document.forms["Form"]["email"].value;
+      var phone = document.forms["Form"]["phone"].value;
+      var password = document.forms["Form"]["password"].value;
+      if (firstName == null || firstName == "", email == null || email == "", phone == null || phone == "", password == null || password == "") {
+        return false;
+      }
+    }
+
+  </script>
+</html>
