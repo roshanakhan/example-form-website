@@ -1,4 +1,4 @@
-Wealthi website 'get started' form with basic visual functionality created using HTML, CSS, Javascript
+Recreated example of the Wealthi website 'get started' form with basic visual functionality created using HTML, CSS, Javascript
 
 1. Download project
 
